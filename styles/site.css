@@ -1,0 +1,649 @@
+/*** General & top/bottom of page ***/
+html {
+    font-family: sans-serif;
+    margin: 1px; /* DON'T REMOVE */
+}
+
+body {
+    /* Source: https://www.terracelanes.com/wp-content/themes/encompass/images/layout/bkgd.jpg */
+    background: url('../images/bkgd.jpeg') repeat;
+}
+
+    /* Interactivity Rules */
+.hidden {
+    display: none;
+}
+
+    /* All page content */
+.body {
+    background-color: #fcf9de;
+}
+
+    /* Header transparent */
+.container {
+    width: 100%;
+    /* Source: https://www.terracelanes.com/wp-content/themes/encompass/images/layout/header-bkgd.png */
+    background: transparent url('../images/header-bkgd.png') no-repeat top;
+    padding-bottom:100px;
+}
+
+    /* Main content (not incl. nav) */
+.content {
+    padding: 2rem;
+    padding-bottom: 75px;
+    padding-top: 50px;
+}
+
+/*** Navigation ***/
+
+.hbg-btn {
+    visibility: hidden;
+}
+
+header span {
+    display: none;
+}
+
+nav {
+    display: flex;
+    background-color: #a62c22;
+    align-items: center;
+    height: 6rem;
+
+    margin: -2px;
+    box-shadow:  0px 5px 20px -5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+header h1 {
+    margin-left: 0;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 -1px black, 0 1px black, -1px 0 black, 1px 0 black;
+}
+
+header ul {
+    flex: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+header ul a {
+    display: flex;
+    margin: 0 15px;
+    color: white;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+nav ul a:hover {
+    color: rgba(89, 22, 4, 0.88);
+}
+
+    /* Logo */
+#character {
+    width: 3.5rem;
+    margin-left: 0;
+    margin-right: -10px;
+}
+
+    /* Header image */
+.banner {
+    max-height: 200px;
+    width: 100%;
+}
+
+/*** Footer ***/
+footer {
+    margin: 50px;
+}
+
+footer a {
+    color: #a62c22;
+}
+
+/*** Page titles ***/
+.content h1 {
+    text-align: center;
+    color: #4e0303;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.content a {
+    color: #a62c22;
+}
+
+.content h3 {
+  color: rgba(168, 36, 36, 0.78);
+}
+
+/*** Carousel ***/
+#team-slides {
+    height: 450px;
+}
+
+.slides {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slide {
+    width: 92%;
+    max-width: 1200px;
+    height: 450px;
+    object-fit: cover;
+}
+
+#left-arrow {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 4%;
+    font-size: 60px;
+    color: #5d5a5a;
+    cursor: pointer;
+}
+
+#right-arrow {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 4%;
+    font-size: 60px;
+    color: #5d5a5a;
+    cursor: pointer;
+}
+
+#circles {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    background-color: #ffffff;
+    border: 1px solid #11170a;
+    cursor: pointer;
+}
+
+#circles .filled {
+    background-color: #573020;
+}
+
+
+/*** About Us ***/
+.main-box {
+    margin: 1rem;
+    padding: 2rem;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(168, 36, 36, 0.78);
+    background-color: white;
+    border-radius: 16px;
+    box-shadow:  0px 5px 20px -5px;
+}
+
+.main-row {
+    display: flex;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#who-we-are {
+    width: 55%;
+}
+
+#bowl-with-us {
+    width: 45%;
+}
+
+/*** Team Page ***/
+#team-page-intro-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#team-page-intro {
+    background-color: white;
+    width: 80%;
+    border: solid;
+    border-color: rgba(168, 36, 36, 0.78);
+    box-shadow:  0px 5px 20px -5px;
+    margin: 30px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.team-page-mobile-image {
+    display: none;
+}
+
+#team-info-and-image-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 25px;
+}
+
+#team-info {
+    background-color: white;
+    width: 60%;
+    border: solid;
+    border-color: rgba(168, 36, 36, 0.78);
+    box-shadow:  0px 5px 20px -5px;
+    margin: 30px 0 30px 30px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+#team-info-image-container {
+    width: 40%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#team-info-image {
+    width: 200px;
+    height: 354px;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px lightgray;
+}
+
+/*** Connect Page ***/
+.connect-desc {
+    color: #4e0303;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.connect-desc p {
+    width: 600px;
+    text-align: center;
+}
+
+.join-follow, .members {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.join, .follow {
+    margin: 10px;
+    justify-content: center;
+    display: block;
+    padding: 20px 20px 40px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(168, 36, 36, 0.78);
+    background-color: white;
+    border-radius: 16px;
+    box-shadow:  0px 5px 20px -5px;
+}
+
+.join {
+    width: 500px;
+    margin-right: 0;
+}
+
+.join-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.join-links a {
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+    background-color: rgba(168, 36, 36, 0.78);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4e0303;
+}
+
+.join-links a:hover {
+    background-color: #4e0303;
+}
+
+.follow {
+    width: 200px;
+}
+
+.eboard {
+    padding-top: 50px;
+}
+
+.eboard h2 {
+  color: #4e0303;
+  text-align: center;
+}
+
+.eboard-row1, .eboard-row2, .eboard-row3, .eboard-row4 {
+    display: flex;
+    margin: 10px 10px 10px 20px;
+    justify-content: center;
+    width: 1000px;
+}
+
+.member {
+    display: block;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin-right: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(168, 36, 36, 0.78);
+    border-radius: 16px;
+    background-color: white;
+    box-shadow:  0px 5px 20px -5px;
+}
+
+.hs {
+    width: 100px;
+    float: left;
+    padding-right: 20px;
+}
+
+.position {
+    font-style: italic;
+}
+
+
+/*** FAQs ***/
+.more-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4e0303;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.more-content h2 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.collapsible-btn {
+    float: right;
+    margin-right: 10px;
+    height: 32px;
+    width: 32px;
+    background-color: #4e0303;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.close-collapsible-btn {
+    width: 25px;
+    margin-right: 10px;
+    height: 32px;
+    width: 32px;
+    background-color: #4e0303;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.more-content {
+    background-color: rgba(168, 36, 36, 0.78);
+}
+
+.faq p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.answer {
+    font-style: italic;
+}
+
+
+/*** Media Queries ***/
+
+    /* Full Screen*/
+@media (min-width: 1200px) {
+    .body {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+
+        border-style: solid;
+        border-color: white;
+        box-shadow:  0px 10px 50px;
+    }
+}
+
+    /* Smaller than max page width */
+@media (max-width: 1200px) {
+    body {
+        background: none;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .join-follow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .follow, .join {
+        width: 70%;
+    }
+
+    .join {
+        margin-right: 10px;
+    }
+}
+
+    /* Mobile Layout */
+@media (max-width: 800px) {
+    /* General */
+
+    /* Navigation */
+    .desktop-menu {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        height: 5rem;
+    }
+
+    header ul {
+        padding-right: 0;
+    }
+
+    nav h1 {
+        font-size: 2.2rem;
+        padding-right: 3rem;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    header span {
+        display: block;
+        opacity: 0;
+    }
+
+    #hamburger-content ul {
+        flex-direction: column;
+        padding-inline-start: 0;
+        align-items: center;
+    }
+
+    #hamburger-content li {
+        list-style-position: inside;
+        border: 1px solid;
+        border-color: #4e0303;
+        margin: 0.1rem;
+        width: 100%;
+        background-color: rgba(168, 36, 36, 0.78);
+    }
+
+    #hamburger-content a {
+        flex: none;
+        display: block;
+        text-align: center;
+        color: white;
+    }
+
+    /* Hamburger Button */
+    .hbg-btn {
+        visibility: visible;
+        font-size: 1.5rem;
+        width: 3rem;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hbg-btn:hover {
+        color: white;
+    }
+
+    /* Carousel */
+    .slides {
+        display: none;
+    }
+
+    #circles {
+        display: none;
+    }
+
+    /* Home */
+    .main-row {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .main-row #who-we-are, .main-row #bowl-with-us {
+        width: auto;
+    }
+
+    .main-box {
+        margin: 0.5rem;
+        padding: 1rem;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    /* Competitive Team */
+    .team-page-mobile-image {
+        display: flex;
+        width: 60%;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0 4px 0;
+    }
+
+    #team-info {
+        width: 70%;
+        margin: 30px;
+        padding: 24px;
+    }
+
+    #team-info-and-image-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    #team-info-image {
+        display: none;
+    }
+
+    /* Connect */
+    .eboard-row1, .eboard-row2, .eboard-row3, .eboard-row4 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .member {
+        width: 70%;
+        margin: 0 0 20px;
+    }
+
+    .eboard-row1, .eboard-row2, .eboard-row3 {
+        margin-bottom: -10px;
+    }
+    /*about us mobile */
+    #bowl-with-us.main-box{
+      width: 90%;
+    }
+
+}
+
+@media (min-width: 800px) {
+    #hamburger-content  {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .member, .join-follow {
+        width: 100%
+    }
+}
+
+@media (max-width: 400px) {
+    nav h1 {
+        font-size: 25px;
+    }
+
+    .hs {
+        display: none;
+    }
+
+    .join-links a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
